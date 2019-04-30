@@ -1,0 +1,537 @@
+/*******************************************************************
+  MAIN
+*******************************************************************/
+#main.hideWatermark {
+	background: none;
+}
+
+/*******************************************************************
+  SIDEBAR
+*******************************************************************/
+.side .photo, .side .video img {
+	/*max-width: 20%;*/
+	border: 5px solid #fff;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.1),
+				-2px 2px 2px rgba(0,0,0,0.1),
+				-2px -2px 2px rgba(0,0,0,0.1),
+				2px -2px 2px rgba(0,0,0,0.1);
+	line-height: 0;
+}
+
+.side a h4 {
+	color: #3a3a3a;
+	margin-top: 5px;
+}
+
+.side .video {
+	margin: 50px 0;
+}
+
+.side .video img {
+	float: left;
+	margin-right: 15px;
+}
+
+.side .careCredit img {
+	display: block;
+	margin: 0 auto;
+}
+
+.careCreditRight {
+	float: right;
+	width: 200px;
+	border: solid #3188ca 1px;
+	padding: 0 10px 20px 10px;
+	margin: 0 0 20px 20px;
+}
+
+#sideLocations {
+	border-top: 1px solid #3689C8;
+	margin-bottom: 40px;
+}
+
+#sideLocations ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#sideLocations ul li {
+	background: #3689C8;
+	border-radius: 3px;
+	margin: 0 0 5px 0;
+	text-align: center;
+}
+
+#sideLocations ul li:hover {
+	background: #3A3A3A;
+}
+
+#sideLocations ul li a {
+	color: #FFFFFF;
+	display: block;
+	padding: 10px;
+}
+
+/*******************************************************************
+	TESTIMONIALS
+*******************************************************************/
+
+.testimonial-item {
+	border-bottom: 1px solid #486C36;
+	margin: 0 0 20px 0;
+	padding: 0 0 10px 0;
+}
+
+.testimonial-item:last-of-type {
+	border-bottom: none;
+	margin: 0;
+	padding: 0;
+}
+
+.testimonial-sender {
+	text-align: right;
+	font-family: Oswald, Myriad Pro, sans-serif;
+	font-size: 20px;
+}
+
+/*******************************************************************
+	SPECIALS
+*******************************************************************/
+#specials .special {
+	overflow: hidden;
+	clear: both;
+	padding-bottom: 5px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	margin: 20px 0;
+}
+
+#specials .special:first-child {
+	margin-top: 50px;
+}
+
+#specials .special:last-child {
+	border-bottom: none;
+}
+
+#specials h2 {
+	margin-top: 0;
+}
+
+#specials .photoborder {
+	max-width: 40%;
+	margin-right: 15px;
+}
+
+footer {
+	box-shadow: none;
+}
+
+#container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+
+#main {
+	padding-top: 80px;
+}
+
+#main .stack {
+	max-width: 1000px;
+}
+
+.sub-navigation-container {
+	background: #3a3a3a;
+}
+
+#sub-navigation {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+#specialsPrint {
+	margin: 20px auto;
+	text-align: center;
+	width: 600px;
+}
+
+#specialsPrint #specials .special {
+	border: 1px dashed #000000;
+	padding: 20px;
+}
+
+#specialsPrint h1,
+#specialsPrint h2 {
+	color: #000000;
+}
+
+/*******************************************************************
+  STAFF
+*******************************************************************/
+.innerBoxStaff {
+	clear: both;
+	padding: 25px 0;
+	border-bottom: 1px solid #3188ca;
+}
+
+.innerBoxStaff:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.innerBoxStaff h2,
+.innerBoxStaff h3 {
+	margin: 0;
+}
+
+.staffBio {
+	margin: 20px 0 0 0;
+}
+
+.staffBio h4 {
+	margin: 0;
+}
+
+.innerBoxStaff img:first-child {
+	float: right;
+	/*max-width: 20%;*/
+	margin: 0 0 20px 20px;
+	border: 5px solid #fff;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.1),
+				-2px 2px 2px rgba(0,0,0,0.1),
+				-2px -2px 2px rgba(0,0,0,0.1),
+				2px -2px 2px rgba(0,0,0,0.1);
+}
+
+.staffPage h1,
+.staffPage h2 {
+	margin: 0;
+}
+
+.staffPage h2 {
+	margin-bottom: 20px;
+}
+
+@media handheld, only screen and (max-width: 460px) {
+	.innerBoxStaff img:first-child {
+		float: none;
+		margin: 0 0 20px 0;
+	}
+
+	.innerBoxStaff h2 {
+		font-size: 18px;
+	}
+
+	.innerBoxStaff h3 {
+		font-size: 16px;
+	}
+}
+
+/*******************************************************************
+  REVIEWS
+*******************************************************************/
+
+.logogrid {
+	margin: 20px auto;
+	text-align: center;
+	font-size: 0;
+	padding: 0;
+}
+
+.logogrid li {
+	display: inline-block;
+}
+
+.logogrid a {
+	display: block;
+	width: 150px;
+	height: 150px;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	-ms-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.logogrid a:hover {
+	opacity: 0.5;
+}
+
+
+.logogrid li.google a { background-image: url(../images/ico-google-big.png) }
+.logogrid li.facebook a { background-image: url(../images/ico-facebook-big.png) }
+.logogrid li.healthgrades a { background-image: url(../images/ico-healthgrades-big.png) }
+.logogrid li.yelp a { background-image: url(../images/ico-yelp-big.png) }
+.logogrid li.insiderpages a { background-image: url(../images/ico-insiderpages-big.png) }
+.logogrid li.superpages a { background-image: url(../images/ico-superpages-big.png) }
+
+
+/*******************************************************************
+  TESTIMONIALS
+*******************************************************************/
+
+.testimonial-sender {
+	font-weight: bold;
+}
+
+.testimonials {
+	background: url(../images/quotes.png) no-repeat top center;
+	padding: 10px 0;
+}
+
+.testimonials blockquote {
+	margin: 30px 0;
+}
+
+.testimonials a {
+	text-transform: uppercase;
+}
+
+#D3cpWidget {
+	width: 100% !important;
+}
+
+.d3cp_review_main {
+	width: 75% !important;
+}
+
+.d3cp_itemized_box {
+	display: none;
+}
+
+.d3cp_feature_wrap {
+	width: 100% !important
+}
+
+/*******************************************************************
+  SIDEBAR TESTIMONIAL
+*******************************************************************/
+
+#main .side blockquote {
+	border-top: 1px solid #3188ca;
+	border-bottom: 1px solid #3188ca;
+	padding: 40px 30px 30px 35px;
+	margin: 20px 0 30px 0;
+	background: url(../images/quotes.png) no-repeat 0 12px;
+	font-style: normal;
+	text-indent: 25px;
+}
+
+/*******************************************************************
+  FORMS
+*******************************************************************/
+
+#contact {
+	margin: 0 0 20px 0;
+}
+
+#contact label {
+	display: block;
+}
+
+#contact span {
+	display: block;
+	font-size: 11px;
+}
+
+#inspection label {
+	margin-right: 15px;
+}
+
+/* Contact form inputs and text areas*/
+input[type='text'], textarea {
+	max-width: 50%;
+	border: 1px solid #cccccc;
+	padding: 0.25em 0.5em;
+	background-color: white;
+	font-family: inherit;
+	color: rgba(0, 0, 0, 0.75);
+	-webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+	-moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+	transition: box-shadow 0.45s, border-color 0.45s ease-in-out; 
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Resizes the text area*/
+textarea {
+	width: 90%;
+	max-width: 95%;
+	height: 150px;
+}
+
+/* Removes the Chrome outline on focus, and produces an animation*/
+input[type='text']:focus, textarea:focus {
+	-webkit-box-shadow: 0 0 5px #999999;
+    -moz-box-shadow: 0 0 5px #999999;
+    box-shadow: 0 0 5px #999999;
+    border-color: #999999; 
+    border-color: #999999;
+    outline: none;
+}
+
+/* Submit button for the form*/
+.submit {
+	display: inline-block;
+	border-style: none;
+	padding: 8px 60px 8px 60px;
+	background: #3188ca;
+	font: bold 16px "Lato", Arial, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-transition: color 0.3s, background 0.3s;
+	-moz-transition: color 0.3s, background 0.3s;
+	-ms-transition: color 0.3s, background 0.3s;
+	-o-transition: color 0.3s, background 0.3s;
+	transition: color 0.3s, background 0.3s;
+		border-radius: 3px;
+}
+
+/* Submit hover state*/
+.submit:hover  {
+	background: #3a3a3a;
+	color: #fff;
+}
+
+/* Contact form error messages*/
+strong.required, div.error {color: #ff0000}
+
+/* Displays a GIF loading animation once the form is submitted*/
+.throbber {
+	display: none;
+	padding-left: 10px;
+}
+
+/* Surrounds the inputs witha  red border if an error is found on submit*/
+input.error,textarea.error {border: 1px solid #ff0000}
+
+/* Hides error messages above individual inputs*/
+p.error {display: none !important} 
+
+/* The contact form success container. Displays a thank-you messgae*/
+.form_success {
+	display: none;
+}
+
+/*******************************************************************
+  BLOG
+*******************************************************************/
+
+#blogList {
+	border-bottom: 1px solid #3188CA;
+}
+
+#blogList ul {
+	margin: 20px 0 30px 0;
+	padding: 0;
+	list-style: none;
+}
+
+#blogList ul li {
+	background: #D5E7F4;
+	border-bottom: 1px solid #FFFFFF;
+	padding: 5px;
+}
+
+#blogList ul li:nth-child(even) {
+	background: #eaf4fb;
+}
+
+/*******************************************************************
+  FINANCING
+*******************************************************************/
+
+#financing {
+	background: #FFFFFF;
+	margin: 0 auto;
+}
+
+#financing .financingRow img {
+	display-inline: block;
+	margin-right: -4px;
+	max-width: 164px;
+	width: 25%;
+}
+
+/*******************************************************************
+  LOCATIONS
+*******************************************************************/
+
+.mapiframe {
+	border: 1px solid #3A3A3A;
+	max-width: 100%;
+}
+
+/*******************************************************************
+  MEDIA QUERIES
+*******************************************************************/
+
+@media handheld, only screen and (max-width: 1000px) {
+	#main {
+		padding-top: 120px;
+	}
+}
+
+@media handheld, only screen and (max-width: 770px) {
+	#financing .financingRow {
+		text-align: center;
+	}
+}
+
+@media handheld, only screen and (max-width: 420px) {
+	#financing .financingRow img {
+		min-width: 105px;
+	}
+}
+
+/*******************************************************************
+  PRINT MEDIA QUERIES
+*******************************************************************/
+
+@media print {
+	body {
+		color: #000;
+		background: #fff;
+	}
+
+	h2, h3 {
+		page-break-after: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	ul, img {
+		page-break-inside: avoid;
+	}
+
+	@page {
+		margin: 2cm;
+	}
+
+	#info,
+	header,
+	.sub-navigation-container,
+	.side,
+	a:link.button,
+	footer,
+	#social {
+		display: none;
+	}
+
+	#main {
+		padding-top: 0;
+	}
+
+	.content {
+		width: 100% !important;
+	}
+}
+
+.staffPage .vc_column-inner { padding:0 !important;}

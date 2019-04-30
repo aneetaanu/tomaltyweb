@@ -1,0 +1,486 @@
+/*
+ *! Handsome LETPlate 1.0.0 
+ * A CSS framework designed for the My L.E.T. Content Management System
+ * Copyright Derek Soulliere & L.E.T. Group, Inc. - 2013
+*/
+
+/*******************************************************************
+   Base Elements
+*******************************************************************/
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-rendering: optimizeLegibility;
+}
+
+p {
+	margin: 0 1em;
+}
+
+/*******************************************************************
+	TYPE
+*******************************************************************/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial;
+	font-weight: normal;
+	font-style: normal;
+	margin-top: 1.4em;
+	margin-bottom: 0.2em;
+	line-height: 1.4em;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+	font-size: 60%;
+	line-height: 0; 
+}
+
+h1 {
+    font-size: 26px; 
+	margin-top: 0.5em;
+}
+
+h2 {
+	font-size: 22px; 
+}
+
+h3 {
+	font-size: 18px; 
+}
+
+h4 {
+	font-size: 16px; 
+}
+
+p {
+	margin: 1em 0;
+}
+
+
+/*******************************************************************
+	DEFAULT LINK STYLE
+*******************************************************************/
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+}
+
+/*******************************************************************
+   BASE GRID
+*******************************************************************/
+
+.stack {
+	clear: both;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+}
+
+/*Center the stacks, used for when the columns do not add up to 12*/
+.stack.center {
+	text-align: center;
+}
+
+
+.stack:after, .stack:before {
+	display: table;
+	content: ' ';
+	width: 100%;
+}
+
+
+/* Justify the colunm. Useful for menus and navigation, and possibly complex layouts. Of note, however, is that you MUST specify the 
+   font-size for any items contained within*/
+
+
+.stack.flex, .flex {
+	text-align: justify;
+	font-size: 0;
+}
+
+.stack.flex:after {
+	content: ' ';
+	display: inline-block;
+	width: 100%;
+}
+
+.stack.flex > * {
+	text-align: left;
+}
+
+.stack [class*="col"] {
+	position: relative;
+	vertical-align: top;
+	float: left;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-left: 3.183050093751211%;
+}
+
+.stack [class*="col"]:first-child {
+	margin-left: 0;
+} 
+
+.stack [class*="col"]:last-child, .stack.flex [class*="col"]:last-child  {
+	margin-bottom: 0;
+} 
+
+.stack.flex [class*="col"], .flex > * .stack .col-12, .stack .md-col-12, .stack .tab-col-12, .stack .mob-col-12 {
+	display: inline-block;
+	float: none;
+	margin-left: 0;
+	margin-bottom: 0;
+	font-size: 13px;
+}
+
+.stack.center [class*="col"] {
+	display: inline-block;
+	float: none;
+	font-size: 13px;
+	text-align: left;
+}
+
+/* Default grid for desktop resolutions. */
+.col-1 {
+	width: 5.41553741406139%;
+}
+.col-2 {
+	width: 14.01412492187399%
+}
+.col-3 {
+	width: 22.61271242968659%
+}
+.col-4 {
+	width: 31.21129993749919%
+}
+.col-5 {
+	width: 39.80988744531179%
+}
+.col-6 {
+	width: 48.4084749531244%
+}
+.col-7 {
+	width: 57.007062460937%;
+}
+.col-8 {
+	width: 65.6056499687496%;
+}
+.col-9 {
+	width: 74.2042374765622%;
+}
+.col-10 {
+	width: 82.8028249843748%;
+}
+.col-11 {
+	width:  91.4014124921874%;
+}
+.col-12 {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+/* Offsets in case column width does not add up to 12. Probably not useful for too much*/
+.offset-1 {
+	margin-left: 5.41553741406139% !important;
+}
+.offset-2 {
+	margin-left: 14.01412492187399% !important;
+}
+.offset-3 {
+	margin-left: 22.61271242968659% !important;
+}
+.offset-4 {
+	margin-left: 31.21129993749919% !important;
+}
+.offset-5 {
+	margin-left: 39.80988744531179% !important;
+}
+.offset-6 {
+	margin-left: 48.4084749531244% !important;
+}
+.offset-7 {
+	margin-left: 57.007062460937% !important;
+}
+.offset-8 {
+	margin-left: 65.6056499687496% !important;
+}
+.offset-9 {
+	margin-left: 74.2042374765622% !important;
+}
+.offset-10 {
+	margin-left: 82.8028249843748% !important;
+}
+.offset-11 {
+	margin-left:  91.4014124921874% !important;
+}
+
+/*******************************************************************
+   VISIBILITY CLASSES
+*******************************************************************/
+
+.hide-desktop {
+	display: none !important;
+}
+
+.show-desktop {
+	display: inherit !important;
+}
+
+
+/* It is assumed that sites will have a default width of 1000px, change as necessary  */
+@media handheld, only screen and (max-width: 1000px) {
+
+	/*******************************************************************
+   		BASE GRID
+	*******************************************************************/
+
+	body {
+		overflow-x: hidden;
+	}
+
+   /* Reccomend a small gutter on the stacks for readability. Gutter size is a golden ratio of 1/12 column, same as margin
+   	.stack {
+   		padding: 0 3.183050093751211%;
+   	} */
+
+
+	/*Set all large rows to 100% width unless additional media queries used*/
+	.col-1, .col-2, .col-3, 
+	.col-4, .col-5, .col-6, 
+	.col-7, .col-8, .col-9,
+	.col-10, .col-11, .col-12
+	{
+		width: 100%;
+	}
+
+	.stack [class*="col"] {
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+
+
+	/*Remove Offsets*/
+	.offset-1, .offset-2, .offset-3, 
+	.offset-4, .offset-5, .offset-6, 
+	.offset-7, .offset-8, .offset-9,
+	.offset-10, .offset-11, .offset-12 {
+		margin-left: 0 !important;
+	}
+
+   /*Use these classes to set a different column size for views smaller than the desktop layout */
+	.stack [class*="med-col"] {
+		margin-left: 3.183050093751211%;
+		margin-bottom: 0;
+	}
+
+	.med-col-1 {
+		width: 5.41553741406139%;
+	}
+	.med-col-2 {
+		width: 14.01412492187399%
+	}
+	.med-col-3 {
+		width: 22.61271242968659%
+	}
+	.med-col-4 {
+		width: 31.21129993749919%
+	}
+	.med-col-5 {
+		width: 39.80988744531179%
+	}
+	.med-col-6 {
+		width: 48.4084749531244%
+	}
+	.med-col-7 {
+		width: 57.007062460937%;
+	}
+	.med-col-8 {
+		width: 65.6056499687496%;
+	}
+	.med-col-9 {
+		width: 74.2042374765622%;
+	}
+	.med-col-10 {
+		width: 82.8028249843748%;
+	}
+	.med-col-11 {
+		width:  91.4014124921874%;
+	}
+	.med-col-12 {
+		width: 100%;
+	}
+
+	/*******************************************************************
+	   VISIBILITY CLASSES
+	*******************************************************************/
+
+	.hide-medium {
+		display: none !important;
+	}
+
+	.show-medium {
+		display: inherit !important;
+	}
+}
+
+/* Tablet grid, defaults at 768px, change as necessary  */
+@media handheld, only screen and (max-width: 805px) {
+
+	/* Sets All medium columns to 100% */
+	.med-col-1, .med-col-2, .med-col-3, 
+	.med-col-4, .med-col-5, .med-col-6, 
+	.med-col-7, .med-col-8, .med-col-9,
+	.med-col-10, .med-col-11, .med-col-12
+	{
+		width: 100%;
+	}
+
+	.stack [class*="med-col"], .stack.flex [class*="med-col"] {
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+
+	/*Column width for tablets */
+
+	.stack [class*="tab-col"] {
+		margin-left: 3.183050093751211%;
+		margin-bottom: 0;
+	}
+	.tab-col-1 {
+		width: 5.41553741406139%;
+	}
+	.tab-col-2 {
+		width: 14.01412492187399%
+	}
+	.tab-col-3 {
+		width: 22.61271242968659%
+	}
+	.tab-col-4 {
+		width: 31.21129993749919%
+	}
+	.tab-col-5 {
+		width: 39.80988744531179%
+	}
+	.tab-col-6 {
+		width: 48.4084749531244%
+	}
+	.tab-col-7 {
+		width: 57.007062460937%;
+	}
+	.tab-col-8 {
+		width: 65.6056499687496%;
+	}
+	.tab-col-9 {
+		width: 74.2042374765622%;
+	}
+	.tab-col-10 {
+		width: 82.8028249843748%;
+	}
+	.tab-col-11 {
+		width:  91.4014124921874%;
+	}
+	.tab-col-12 {
+		width: 100%;
+	}
+
+	/*******************************************************************
+	   VISIBILITY CLASSES
+	*******************************************************************/
+
+	.hide-tablet {
+		display: none !important;
+	}
+
+	.show-tablet {
+		display: inherit !important;
+	}
+}
+
+/* Tablet grid, defaults at 768px, change as necessary  */
+@media handheld, only screen and (max-width: 320px) {
+
+	/*******************************************************************
+   		BASE GRID
+	*******************************************************************/
+
+
+	/* Sets All medium columns to 100% */
+	.tab-col-1, .tab-col-2, .tab-col-3, 
+	.tab-col-4, .tab-col-5, .tab-col-6, 
+	.tab-col-7, .tab-col-8, .tab-col-9,
+	.tab-col-10, .tab-col-11, .tab-col-12
+	{
+		width: 100%;
+	}
+	.stack [class*="tab-col"], .stack.flex [class*="tab-col"] {
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+
+
+   /*Column sizes for mobile */
+   .stack [class*="mob-col"] {
+		margin-left: 3.183050093751211%;
+		margin-bottom: 0;
+	}
+	.mob-col-1 {
+		width: 5.41553741406139%;
+	}
+	.mob-col-2 {
+		width: 14.01412492187399%
+	}
+	.mob-col-3 {
+		width: 22.61271242968659%
+	}
+	.mob-col-4 {
+		width: 31.21129993749919%
+	}
+	.mob-col-5 {
+		width: 39.80988744531179%
+	}
+	.mob-col-6 {
+		width: 48.4084749531244%
+	}
+	.mob-col-7 {
+		width: 57.007062460937%;
+	}
+	.mob-col-8 {
+		width: 65.6056499687496%;
+	}
+	.mob-col-9 {
+		width: 74.2042374765622%;
+	}
+	.mob-col-10 {
+		width: 82.8028249843748%;
+	}
+	.mob-col-11 {
+		width:  91.4014124921874%;
+	}
+	.mob-col-12 {
+		width: 100%;
+	}
+
+	/*******************************************************************
+	   VISIBILITY CLASSES
+	*******************************************************************/
+
+	.hide-mobile {
+		display: none !important;
+	}
+
+	.show-mobile {
+		display: inherit !important;
+	}
+}
